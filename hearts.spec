@@ -12,6 +12,7 @@ Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/hearts/%{name}-%{version}.tar.bz2
 # Source0-md5:	160c349537d963234aa9b984cb124bb5
 Patch0:		%{name}-am_fixes.patch
+BuildRequires:	automake
 URL:		http://hearts.luispedro.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,6 +31,7 @@ mo¿liwo¶c gry przez sieæ.
 %patch0 -p1
 
 %build
+cp -f /usr/share/automake/config.sub admin/
 %configure
 %{__make}
 
