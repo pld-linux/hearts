@@ -1,0 +1,12 @@
+diff -burN hearts-1.98.orig/common/network/Makefile hearts-1.98/common/network/Makefile
+--- hearts-1.98.orig/common/network/Makefile	2004-10-03 14:20:00.969715128 +0200
++++ hearts-1.98/common/network/Makefile	2004-10-03 14:33:58.626371960 +0200
+@@ -39,7 +39,7 @@
+ build_triplet = i686-pc-linux-gnu
+ host_triplet = i686-pc-linux-gnu
+ target_triplet = i686-pc-linux-gnu
+-ACLOCAL = ${SHELL} /home/luis/src/hearts/hearts/admin/missing --run aclocal-1.7
++ACLOCAL = ${SHELL} /home/luis/src/hearts/hearts/admin/missing --run aclocal-1.8
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+ AMTAR = ${SHELL} /home/luis/src/hearts/hearts/admin/missing --run tar
