@@ -12,8 +12,8 @@ Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/hearts/%{name}-%{version}.tar.bz2
 # Source0-md5:	160c349537d963234aa9b984cb124bb5
 Patch0:		%{name}-am_fixes.patch
-BuildRequires:	automake
 URL:		http://hearts.luispedro.org/
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,14 +24,14 @@ play.
 %description -l pl
 Jest to klon znanej z MS Windows gry hearts (kierki). Wersja stabilna
 pozwala tylko na grê lokaln±, w wersji rozwojowej dostêpna jest
-mo¿liwo¶c gry przez sieæ.
+mo¿liwo¶æ gry przez sieæ.
 
 %prep
 %setup -q
 %patch0 -p1
 
 %build
-cp -f /usr/share/automake/config.sub admin/
+cp -f /usr/share/automake/config.sub admin
 %configure
 %{__make}
 
@@ -42,7 +42,7 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}/kde
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-mv -f $RPM_BUILD_ROOT{%{_datadir}/applnk/Games/Card/,%{_desktopdir}/kde}/hearts.desktop
+mv -f $RPM_BUILD_ROOT{%{_datadir}/applnk/Games/Card,%{_desktopdir}/kde}/hearts.desktop
 
 %find_lang %{name}
 
