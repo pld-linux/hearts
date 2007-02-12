@@ -3,7 +3,7 @@
 # - fix desktop file
 
 Summary:	Clone of popular hearts game
-Summary(pl):	Klon popularnej gry hearts
+Summary(pl.UTF-8):   Klon popularnej gry hearts
 Name:		hearts
 Version:	1.98
 Release:	1
@@ -21,10 +21,10 @@ This is a clone of MS Windows' hearts game. Currently a stable version
 supports local play, while a development version supports network
 play.
 
-%description -l pl
+%description -l pl.UTF-8
 Jest to klon znanej z MS Windows gry hearts (kierki). Wersja stabilna
-pozwala tylko na grê lokaln±, w wersji rozwojowej dostêpna jest
-mo¿liwo¶æ gry przez sieæ.
+pozwala tylko na grÄ™ lokalnÄ…, w wersji rozwojowej dostÄ™pna jest
+moÅ¼liwoÅ›Ä‡ gry przez sieÄ‡.
 
 %prep
 %setup -q
