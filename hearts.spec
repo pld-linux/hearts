@@ -3,7 +3,7 @@
 # - fix desktop file
 
 Summary:	Clone of popular hearts game
-Summary(pl.UTF-8):   Klon popularnej gry hearts
+Summary(pl.UTF-8):	Klon popularnej gry hearts
 Name:		hearts
 Version:	1.98
 Release:	1
